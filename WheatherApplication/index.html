@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/255b683c12.js" crossorigin="anonymous"></script>
+    <title>Wheather Page</title>
+</head>
+
+<body>
+    
+        <div class="wrapper">
+        
+            <header>
+                <i class="fa-solid fa-left-long" style="color: #4f68c9;" ></i>
+                Hava Durumu
+                
+            </header>
+    
+    
+            <section class="input-part">
+    
+                <p class="cityLabel">Şehir İsmi Giriniz . .</p>
+                <input id="cityInput" type="text" placeholder="Ex: Sefaköy" required>
+    
+                <div class="seperator"></div>
+                <button id="location-btn">Mevcut Konumun Durumu</button>
+    
+            </section>
+    
+            <section class="weather-part">
+    
+                <img src="./icons/cloud.svg" alt="Cloud">
+                <div id="temp">
+                    <span class="temp-number">13</span>
+                    <span class="temp-degre">°</span>
+                </div><!--temperature-->
+    
+                <div class="weather">Broken Cloud</div>
+    
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="location-city">Küçükçekmece</span>
+                    <span>/</span>
+                    <span id="location-country">Türkiye</span>
+                </div>
+    
+                                <!--Detay-->
+    
+                <div class="bottom-detail">
+    
+                    <!--Sıcaklık-->
+    
+                    <div id="column-feels">
+                        <div id="details">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                            <span class="feel-number">13</span>
+                            <span class="feel-degre">°</span>
+                        </div>
+                        <p> Feel Temp</p>
+                    </div>
+    
+                    <!--Nem-->
+                    
+                    <div id="column-humidity">
+    
+                        <div id="details">
+                            <i class="fa-solid fa-water"></i>
+                            <span class="humidity">84%</span>
+    
+                        </div>
+    
+                        <p> Humidity</p>
+    
+                    </div>
+    
+    
+    
+    
+                </div>
+    
+    
+            </section>
+    
+    
+        </div><!--wrapper-->
+
+
+        <div class="background">
+            <img src="icons/default.jpg" alt="Background Image" id="background-image">
+
+        </div> 
+        
+
+<script src="./script.js"></script>
+</body>
+
+</html>
